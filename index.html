@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Control many pages in dummy way</title>
+  </head>
+  <body>
+    <div class="app">
+      <p>First vue instance: {{ dummyVariable }}</p>
+    </div>
+    <div class="app">
+      <p>Attempt on second vue instance: {{ dummyVariable }} (this one is not processed)</p>
+    </div>
+    <div id="app">
+      <p>Second vue instance by creating a separate vue object: {{ otherDummyVariable }}</p>
+    </div>
+
+    <img src="devtool-screenshots.jpg" alt="devtool screenshots">
+
+    <script src="https://unpkg.com/vue@next"></script>
+    <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>
